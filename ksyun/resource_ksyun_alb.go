@@ -80,7 +80,6 @@ func resourceKsyunAlb() *schema.Resource {
 				// Optional:     true,
 				// Computed:     true,
 				Required:     true,
-				ForceNew:     true,
 				ValidateFunc: validation.StringInSlice([]string{"standard", "medium", "advanced"}, false),
 				Description:  "The version of the ALB. valid values:'standard', 'medium', 'advanced'.",
 			},
